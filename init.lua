@@ -50,7 +50,6 @@ require("lazy").setup({
         "python",
         "rust",
         "go",
-        "query",
         "regex",
         "toml",
         "vim",
