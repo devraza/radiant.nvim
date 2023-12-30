@@ -22,7 +22,7 @@ require("lazy").setup({
   "romgrk/barbar.nvim",
   "nvim-lualine/lualine.nvim",
   "devraza/particle.nvim",
-  "ellisonleao/glow.nvim",
+  {"ellisonleao/glow.nvim", config = true, cmd = "Glow"}
   "rktjmp/lush.nvim",
   {
     "nvimdev/dashboard-nvim",
