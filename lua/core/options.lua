@@ -45,3 +45,6 @@ o.swapfile = false
 o.guifont = "Iosevka Comfy:h10.5"
 -- Colorscheme
 vim.cmd("colorscheme particle")
+
+-- Neovide transparency
+vim.g.neovide_transparency = 0.9
