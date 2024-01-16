@@ -23,8 +23,9 @@ wk.register({
   },
   g = {
     name = "git",
-    p = { "<cmd>Neogit cwd=%:p:h push<cr>", "Push Popup" },
-    c = { "<cmd>Neogit cwd=%:p:h commit<cr>", "Commit Popup" },
+    p = { "<cmd>Neogit cwd=" .. vim.fn.expand("%:p:h") .. " push<cr>", "Push Popup" },
+    c = { "<cmd>Neogit cwd=" .. vim.fn.expand("%:p:h") .. " commit<cr>", "Commit Popup" },
+    g = { "<cmd>Neogit<cr>", "Neogit" },
   },
   ["."] = { ":e ", "Edit File", silent = false },
 }, { prefix = "<leader>" })
