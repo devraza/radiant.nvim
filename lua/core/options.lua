@@ -34,6 +34,9 @@ o.relativenumber = true
 o.signcolumn = "yes"
 o.termguicolors = true
 
+-- Fix rendering of ASCII
+o.linespace = -1
+
 -- Do not wrap lines
 o.wrap = false
 
