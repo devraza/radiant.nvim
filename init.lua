@@ -16,45 +16,48 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Setup the package manager with plugins and configuration options
 require("lazy").setup({
+  -- Default theme
+  "devraza/kagayaki.nvim",
+
   "folke/which-key.nvim",
-  "nvim-telescope/telescope.nvim",
+  {
+    "nvim-telescope/telescope.nvim",
+    dependencies = { 'nvim-lua/plenary.nvim' },
+  },
   "neovim/nvim-lspconfig",
   "romgrk/barbar.nvim",
   "nvim-lualine/lualine.nvim",
-  "devraza/particle.nvim",
-  {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
-  "rktjmp/lush.nvim",
   {
-    "nvimdev/dashboard-nvim",
+    "NeogitOrg/neogit",
     dependencies = {
-      "nvim-tree/nvim-web-devicons",
       "nvim-lua/plenary.nvim",
-    }
+      "sindrets/diffview.nvim",
+      "nvim-telescope/telescope.nvim",
+    },
+    config = true
   },
+  {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
   {
+    "max397574/better-escape.nvim",
+    config = function()
+      require("better_escape").setup()
+    end,
+  },
+  "rktjmp/lush.nvim",
+   {
     "nvim-treesitter/nvim-treesitter",
     version = false,
     build = ":TSUpdate",
     opts = {
       highlight = { enable = true },
       indent = { enable = true },
-      ensure_installed = {
-        "bash",
-        "diff",
-        "html",
-        "json",
-        "lua",
-        "markdown",
-        "python",
-        "rust",
-        "go",
-        "regex",
-        "toml",
-        "vim",
-        "yaml",
-      },
+      ensure_installed = "maintained",
     }
-  }
+  },
+  {
+    'goolord/alpha-nvim',
+    dependencies = { 'nvim-tree/nvim-web-devicons' },
+  };
 })
 
 -- Imports from files
