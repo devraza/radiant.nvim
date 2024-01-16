@@ -33,6 +33,7 @@ o.numberwidth = 4
 o.relativenumber = true
 o.signcolumn = "yes"
 o.termguicolors = true
+o.autochdir = true
 
 -- Fix rendering of ASCII
 o.linespace = -1
