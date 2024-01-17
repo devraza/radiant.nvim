@@ -58,6 +58,26 @@ require("lazy").setup({
     'goolord/alpha-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
   };
+  {
+    "nvim-neorg/neorg",
+    build = ":Neorg sync-parsers",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("neorg").setup {
+        load = {
+          ["core.defaults"] = {},
+          ["core.concealer"] = {},
+          ["core.dirman"] = {
+            config = {
+              workspaces = {
+                notes = "~/NAS/Neorg/Notes",
+              },
+            },
+          },
+        },
+      }
+    end,
+  },
 })
 
 -- Imports from files
