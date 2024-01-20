@@ -61,22 +61,8 @@ require("lazy").setup({
   {
     "nvim-neorg/neorg",
     build = ":Neorg sync-parsers",
+    branch = "main",
     dependencies = { "nvim-lua/plenary.nvim" },
-    config = function()
-      require("neorg").setup {
-        load = {
-          ["core.defaults"] = {},
-          ["core.concealer"] = {},
-          ["core.dirman"] = {
-            config = {
-              workspaces = {
-                notes = "~/NAS/Neorg/Notes",
-              },
-            },
-          },
-        },
-      }
-    end,
   },
 })
 
