@@ -22,6 +22,6 @@ local wk = require("which-key")
 wk.register({
   n = {
     name = "neorg",
-    p = { "<cmd>Telescope find_files search_dir=~/NAS/Documents/Neorg cwd=" .. vim.fn.expand("%:p:h") .. " push<cr>", "Search for notes" },
+    p = { "<cmd>Telescope find_files search_dir=~/NAS/Documents/Neorg<cr>", "Search for notes" },
   },
 }, { prefix = "<leader>" })
