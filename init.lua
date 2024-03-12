@@ -44,16 +44,6 @@ require("lazy").setup({
     end,
   },
   "rktjmp/lush.nvim",
-   {
-    "nvim-treesitter/nvim-treesitter",
-    version = false,
-    build = ":TSUpdate",
-    opts = {
-      highlight = { enable = true },
-      indent = { enable = true },
-      ensure_installed = "maintained",
-    }
-  },
   {
     'goolord/alpha-nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
