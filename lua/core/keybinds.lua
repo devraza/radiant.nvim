@@ -18,11 +18,6 @@ wk.register({
     j = { "<cmd>tabprev<cr>", "Previous Tab" },
     k = { "<cmd>tabnext<cr>", "Next Tab" },
   },
-  l = {
-    name = "lazy",
-    u = { "<cmd>Lazy update<cr>", "Update" },
-    s = { "<cmd>Lazy sync<cr>", "Sync" },
-  },
   g = {
     name = "git",
     p = { "<cmd>Neogit cwd=" .. vim.fn.expand("%:p:h") .. " push<cr>", "Push Popup" },
