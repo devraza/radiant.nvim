@@ -43,8 +43,6 @@ local buttons = {
     dashboard.button("SPC f f", "Find File  "),
     dashboard.button("SPC f g", "Find Word  "),
     dashboard.button("SPC f e", "Edit File  "),
-    { type = 'padding', val = 1 },
-    dashboard.button("SPC l u", "Update Plugins"),
   },
   opts = {
     spacing = 1,
