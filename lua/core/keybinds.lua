@@ -15,8 +15,8 @@ wk.register({
   t = {
     name = "tabs",
     n = { "<cmd>tabnew<cr>", "New Tab" },
-    j = { "<cmd>tabprev<cr>", "Previous Tab" },
-    k = { "<cmd>tabnext<cr>", "Next Tab" },
+    j = { "<cmd>BufferPrevious<cr>", "Previous Tab" },
+    k = { "<cmd>BufferNext<cr>", "Next Tab" },
   },
   g = {
     name = "git",
