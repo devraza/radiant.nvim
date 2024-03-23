@@ -20,6 +20,11 @@ wk.register({
     h = { "<cmd>BufferMovePrevious<cr>", "Move Previous" },
     l = { "<cmd>BufferMoveNext<cr>", "Move Next" },
   },
+  b = {
+    name = "buffers",
+    d = { "<cmd>BufferDelete!<cr>", "Delete" },
+    c = { "<cmd>BufferClose!<cr>", "Close" },
+  },
   g = {
     name = "git",
     g = { "<cmd>Neogit<cr>", "Neogit" },
