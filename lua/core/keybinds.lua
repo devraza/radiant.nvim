@@ -25,6 +25,11 @@ wk.register({
     d = { "<cmd>BufferDelete!<cr>", "Delete" },
     c = { "<cmd>BufferClose!<cr>", "Close" },
   },
+  r = {
+    name = "tree",
+    t = { "<cmd>NvimTreeToggle<cr>", "Toggle" },
+    f = { "<cmd>NvimTreeFocus<cr>", "Focus" },
+  },
   g = {
     name = "git",
     g = { "<cmd>Neogit<cr>", "Neogit" },
