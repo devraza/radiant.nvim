@@ -34,5 +34,9 @@ wk.register({
     name = "git",
     g = { "<cmd>Neogit<cr>", "Neogit" },
   },
+  e = {
+    name = "editor",
+    c = { "<cmd>noh<cr>", "Clear Search" },
+  },
   ["."] = { ":e ", "Edit File", silent = false },
 }, { prefix = "<leader>" })
