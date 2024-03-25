@@ -49,6 +49,8 @@ o.swapfile = false
 o.guifont = "Iosevka Comfy:h10.5"
 -- Colorscheme
 vim.cmd("colorscheme kagayaki")
+-- Transparent nontext
+vim.opt.fillchars:append { eob = " " }
 
 -- Neovide transparency
 vim.g.neovide_transparency = 0.9
