@@ -10,7 +10,8 @@ require("neorg").setup {
     },
     ["core.concealer"] = {
       config = {
-        icons_preset = "varied"
+        folds = false,
+        icons_preset = "varied",
       },
     },
   },
