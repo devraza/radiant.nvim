@@ -24,5 +24,6 @@ wk.register({
   n = {
     name = "neorg",
     f = { "<cmd>Telescope find_files search_dirs=~/NAS/Documents/Neorg<cr>", "Search for notes" },
+    d = { "<cmd>Telescope find_files search_dirs=~/NAS/Documents/Typst<cr>", "Search Typst Documents" },
   },
 }, { prefix = "<leader>" })
