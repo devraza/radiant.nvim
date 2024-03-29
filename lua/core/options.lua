@@ -38,8 +38,9 @@ o.autochdir = true
 -- Fix rendering of ASCII
 o.linespace = -1
 
--- Do not wrap lines
-o.wrap = false
+-- Wrap lines
+o.wrap = true
+o.linebreak = true
 
 -- Disable backups and swapfile
 o.backup = false
