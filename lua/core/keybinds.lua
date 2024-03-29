@@ -7,8 +7,8 @@ wk.register({
     a = { "<cmd>Telescope find_files hidden=true search_dirs=~<cr>", "Find Hidden (~)" },
     p = { "<cmd>Telescope find_files hidden=true<cr>", "Find File" },
     g = { "<cmd>Telescope live_grep<cr>", "Find Word" },
-    s = { "<cmd>:w<cr>", "Write" },
-    w = { "<cmd>:w!<cr>", "Force Write" },
+    s = { "<cmd>:w!<cr>", "Force Write" },
+    w = { "<cmd>:w<cr>", "Write" },
 
     e = { ":e ", "Edit File", silent = false },
   },
