@@ -54,4 +54,4 @@ vim.cmd("colorscheme kagayaki")
 vim.opt.fillchars:append { eob = " " }
 
 -- Neovide transparency
-vim.g.neovide_transparency = 0.9
+vim.g.neovide_opacity = 0.9
