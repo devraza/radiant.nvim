@@ -79,8 +79,7 @@ require('mason-lspconfig').setup({
   },
 })
 require('lspconfig').gopls.setup({})
-require('lspconfig').rust_analyzer.setup({})
-require('lsp-zero').setup_servers({'gopls', 'rust_analyzer'})
+require('lsp-zero').setup_servers({'gopls'})
 local cmp = require('cmp')
 cmp.setup({
   sources = {
